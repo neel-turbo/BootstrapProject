@@ -1,0 +1,296 @@
+/* General Changes */
+h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+
+.navbar{
+  border-bottom: white solid 2px;
+}
+.navbar-brand{
+  /* color:	#1c39bb !important; */
+  font-size: 24px;
+}
+.nav-link{
+  text-transform: uppercase;
+}
+.nav-link:hover{
+  /* color: #1c39bb; */
+}
+/* Navbar Section */
+
+/* Header Section */
+
+.display-4{
+   margin-top:200px;
+   margin-bottom: 20px;
+   color:#ececec;
+}
+.btn{
+  margin-top: 30px;
+}
+.header-p{
+  color: #ececec;
+}
+
+#header{
+  background: url('../images/nasa.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* #header .overlay{
+  background-color: rgba(0,0,26,0.4);
+  height: 100vh;
+} */
+
+.btn-outline-light{
+  cursor: pointer;
+}
+.btn-outline-light:hover{
+  background-color: #8c92ac;
+  color:white;
+  border-color: #8c92ac !important;
+}
+/* Header Section */
+
+/* Feature Section */
+
+#features i{
+  color: #36454f;
+}
+
+#features h3:hover{
+  color: #36454f;
+  cursor: pointer;
+}
+
+/* Feature Section */
+
+
+/* Our Work Section */
+
+#work{
+  background: url(../images/work.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#work i{
+  color: #ececec;
+}
+
+#work h3 {
+  color:#ececec;
+}
+#work p {
+  color:#ececec;
+}
+
+/* Our Work Section */
+
+
+/* Product Section */
+
+.btn-outline-secondary{
+  cursor: pointer;
+}
+.btn-outline-secondary:hover{
+  background-color: #36454f;
+  color:white;
+  border-color: #36454f !important;
+}
+
+/* Product Section */
+
+/* Testimonials Section */
+
+/* .carousel-item{
+  height: 800px;
+  width: 100%;
+} */
+/* .img-fuild{
+  max-width: 100%;
+} */
+.imgc{
+  height: 600px;
+  min-height: 450px;
+  /* max-height: 450px; */
+  width: 100%;
+
+}
+
+/* Testimonials Section */
+
+/* Galaxt Section */
+
+#galaxy{
+  background-color: #f0f0f5;
+}
+.galaxyArea{
+  background-color: white;
+  height: 450px;
+  margin-right: -50px;
+  padding: 30px;
+
+}
+
+.galaxyImage{
+  margin-top: 90px;
+  margin-left: -90px;
+  z-index: 40;
+  position: relative;
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: 300px;
+}
+/* Galaxt Section */
+
+/* Galaxt Gallery Section */
+
+
+
+#galaxyGallery .col-md-3{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.imageContainer{
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.imgOverlay{
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0,0,26);
+  opacity: 0;
+  border-radius: 6px;
+}
+
+.imageContainer .imgOverlay:hover{
+  opacity: 0.4;
+}
+
+.image-fluid{
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+
+}
+
+.imgText{
+  position: absolute;
+  color: white;
+}
+
+/* Galaxt Gallery Section */
+
+
+/* Footer Section */
+
+#footer{
+  background-color: #111;
+  width: 100%;
+}
+
+#footer .container{
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social{
+  margin: 20px 0;
+}
+
+.social a{
+  color: white;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.content h2{
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#footer .container .content{
+  padding:10px 20px;
+  color:white;
+}
+
+.second{
+  margin-left: 100px;
+}
+
+/* Footer Section */
+
+
+@media screen and (max-width:1200px) {
+  #header{
+    background-size: 1200px 100%;
+  }
+  .galaxyImage{
+    margin-left: 10px;
+  }
+
+}
+@media screen and (max-width:992px) {
+
+  #header{
+    background-size: 992px 100%;
+    .galaxyImage{
+      margin-left: 20px;
+    }
+
+}
+@media screen and (max-width:768px) {
+  #header{
+    background-size: 768px 100%;
+  }
+  .galaxyImage{
+    margin-left: 0;
+    margin-top:20px;
+    text-align: center;
+  }
+
+  .imgc{
+    height: 500px;
+  }
+}
+@media screen and (max-width:576px) {
+  #header{
+    background-size: 576px 100%;
+  }
+  .galaxyImage{
+    margin-left: 0;
+    margin-top:-20px;
+    text-align: center;
+  }
+
+  .imgc{
+    height: 300px;
+  }
+}
